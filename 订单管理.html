@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/rem.js"></script>
+		<style>
+			.mui-media-body {
+				padding-right: .2rem;
+			}
+			
+			.mui-media-body p {
+				width: 100%;
+			}
+			
+			.mui-ellipsis {
+				white-space: normal;
+			}
+			
+			.mui-table-view .mui-media-object {
+				max-width: 2.4rem;
+				width: 2.4rem;
+				max-height: 1.5rem;
+				height: 1.5rem;
+			}
+			
+			.mui-card-footer .payBtn {
+				background-color: #0097e0;
+				color: #fffce6;
+				height: .8rem;
+				line-height: .4rem;
+				padding: .2rem;
+				display: inline-block;
+				border-radius: .1rem;
+			}
+			
+			#goodsCart {
+				text-align: center;
+			}
+			
+			#goodsCart .noGoods {
+				margin-top: 1.8rem;
+			}
+			
+			#goodsCart .noGoods img {
+				width: 5rem;
+				height: 3rem;
+			}
+			
+			#goodsCart .noGoods p {
+				color: #9d9d9d;
+				line-height: .6rem;
+				font-size: .24rem;
+			}
+			
+			.goodsCart button {
+				text-align: center;
+				color: #2b2b2b;
+				font-size: .24rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<div class="mui-content">
+
+			<div class="mui-card">
+				<div class="mui-card-footer ">
+					<span class="mui-card-link">广州风日店</span>
+					<a class="mui-card-link mui-icon mui-icon-trash"></a>
+				</div>
+				<div class="mui-card-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<img class="mui-media-object mui-pull-left" src="images/car.png">
+								<div class="mui-media-body">
+
+									<p class="mui-ellipsis">【车型】轩逸2014款1.6L CVT 基本型</p>
+								</div>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="mui-card-footer">
+					<span class="mui-card-link">实付款：￥290元</span>
+					<span class="mui-card-link">已完成</span>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-footer ">
+					<span class="mui-card-link">广州风日店</span>
+					<span class="mui-card-link ">请在24小时内支付完成</span>
+				</div>
+				<div class="mui-card-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<img class="mui-media-object mui-pull-left" src="images/car.png">
+								<div class="mui-media-body">
+
+									<p class="mui-ellipsis">【车型】轩逸2014款1.6L CVT 基本型</p>
+								</div>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="mui-card-footer">
+					<span class="mui-card-link">实付款：￥290元</span>
+					<span class="mui-card-link payBtn">马上支付</span>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-footer ">
+					<span class="mui-card-link">广州风日店</span>
+					<a class="mui-card-link mui-icon mui-icon-trash"></a>
+				</div>
+				<div class="mui-card-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<img class="mui-media-object mui-pull-left" src="images/car.png">
+								<div class="mui-media-body">
+
+									<p class="mui-ellipsis">【车型】轩逸2014款1.6L CVT 基本型</p>
+								</div>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="mui-card-footer">
+					<span class="mui-card-link">实付款：￥290元</span>
+					<span class="mui-card-link">已完成</span>
+				</div>
+			</div>
+		</div>
+
+		<div id="goodsCart">
+			<div class="noGoods">
+				<img src="images/car.png" alt="" />
+				<p>暂无订单</p>
+			</div>
+			<button class="mui-btn">点击返回首页</button>
+		</div>
+	</body>
+
+</html>

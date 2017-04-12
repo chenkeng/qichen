@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/rem.js"></script>
+		<style>
+			.carInfo {
+				padding: .3rem .3rem 0;
+				background-color: #FFFFFF;
+			}
+			
+			.carInfo>p {
+				/*background-color: #eaeaea;*/
+				height: .56rem;
+				line-height: .56rem;
+				margin: 0;
+				font-size: .3rem;
+				color: #222222;
+				border-bottom: 1px solid #DCDCDC;
+				margin-bottom: .2rem;
+			}
+			
+			.carModel {
+				width: 63%;
+				display: inline-block;
+				padding: .2rem 0;
+				vertical-align: middle;
+			}
+			
+			.carModel p {
+				line-height: .4rem;
+				margin: 0;
+			}
+			
+			.carImg {
+				display: inline-block;
+				width: 35%;
+				vertical-align: middle;
+			}
+			
+			.carImg img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.serviceInfo,
+			.payWays {
+				background-color: #FFFFFF;
+			}
+			
+			.service,
+			.describe {
+				padding: 0 .3rem;
+			}
+			
+			.serviceInfo>p,
+			.payWays>p {
+				padding: 0 .3rem;
+				height: .8rem;
+				line-height: .8rem;
+				/*padding-left: .3rem;*/
+				margin: 0;
+				font-size: .3rem;
+				color: #222;
+			}
+			
+			.shop {
+				background-color: #FFFFFF;
+				padding: .3rem;
+			}
+			
+			.details {
+				background-color: #FFFFFF;
+				/*padding: 0 .3rem ;*/
+			}
+			
+			.title {
+				height: .8rem;
+				line-height: .8rem;
+				font-size: .3rem;
+				/*border: 1px solid black;*/
+			}
+			
+			.title a {
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.adviser {
+				height: 1.6rem;
+				padding: 0 .3rem;
+			}
+			
+			.avtor {
+				width: 1.2rem;
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: .4rem;
+				/*height: 1.6rem;*/
+			}
+			
+			.adviser p {
+				display: inline-block;
+				width: 69%;
+			}
+			
+			.fixwidth {
+				width: 2rem;
+				display: inline-block;
+				color: #2C2C2C;
+			}
+			
+			.mui-table-view-chevron {
+				padding: 0;
+				border-bottom: 1px solid #DEDEDE;
+			}
+			
+			.serviceInfo {
+				margin-top: .3rem;
+				/*padding: 0 .3rem;*/
+			}
+			
+			.serviceInfo input {
+				width: 4rem;
+				border: none;
+				margin: 0;
+				padding: 0;
+				font-size: .24rem;
+			}
+			
+			.serviceInfo label span {
+				font-size: .28rem;
+			}
+			
+			.mui-icon-checkbox {
+				color: #0097E0;
+			}
+			
+			.mui-icon-checkbox-filled {
+				color: #0097E0;
+			}
+			
+			.save {
+				background-color: #FFFFFF;
+				padding-left: .3rem;
+			}
+			
+			.save>p {
+				display: inline-block;
+				margin: 0;
+				height: .85rem;
+				line-height: .85rem;
+			}
+			
+			.bgColor {
+				background-color: #0097E0;
+				color: #FFFFFF;
+			}
+			
+			.save p:nth-child(2) {
+				padding: 0 .2rem;
+			}
+			
+			.remark {
+				padding: 0 .3rem;
+				background-color: #FFFFFF;
+				margin-top: .3rem;
+			}
+			
+			.remark>p {
+				padding-top: .2rem;
+			}
+			
+			.save i {
+				text-decoration: line-through;
+			}
+			
+			.name {
+				padding-left: 1rem;
+				background: url(images/name@2x.png) no-repeat .3rem center;
+				background-size: .4rem;
+				width: 100%;
+				border-bottom: 1px solid #DCDCDC;
+			}
+			
+			.shouji {
+				padding-left: 1rem;
+				background: url(images/shouji@2x.png) no-repeat .3rem center;
+				background-size: .4rem;
+			}
+			
+			.underLine {
+				border-bottom: 1px solid #DCDCDC;
+			}
+			
+			.service>p,
+			.describe>p {
+				margin: 0;
+				line-height: .6rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<div class="carInfo">
+			<p>车辆信息</p>
+			<div class="carModel">
+				<p>想A12344445 <br />新天籁 2.0L X-Sporty 欧冠远东版</p>
+			</div>
+			<div class="carImg"><img src="images/car.png" alt="" /></div>
+		</div>
+
+		<div class="shop">
+			<div class="title">服务门店及时间</div>
+			<div class="items">
+				<p><span class="fixwidth">门店：</span><span>广州丰日</span></p>
+				<p><span class="fixwidth">时间：</span><span>2013年8月2日</span></p>
+			</div>
+		</div>
+
+		<div class="details">
+			<ul class="mui-table-view-chevron">
+				<li class="mui-table-view-cell">
+					<a href="#notifications" class="mui-navigate-right">服务顾问</a>
+				</li>
+			</ul>
+			<div class="adviser">
+
+				<!--<div class="avtor">-->
+				<img class="avtor" src="images/center-card@2x.png" alt="" />
+				<!--</div>-->
+				<p>若你有偶相熟的服务可宣传想</p>
+			</div>
+		</div>
+
+		<div class="serviceInfo">
+			<p class="underLine">服务内容</p>
+
+			<div class="service">
+				<p><span class="fixwidth">资助保养</span><span class="mui-pull-right">463.00元</span></p>
+				<p><span class="fixwidth">更换空气陆清气</span><span class="mui-pull-right">463.00元</span></p>
+				<p><span class="fixwidth">润滑系统包邮</span><span class="mui-pull-right">463.00元</span></p>
+				<p><span class="fixwidth">保养里程：</span><span>3400公里</span></p>
+			</div>
+		</div>
+
+		<div class="payWays">
+			<p class="underLine">支付方式 </p>
+
+			<div class="describe">
+				<p><span class="fixwidth">支付方式：</span><span>在线支付</span></p>
+				<p><span class="fixwidth">使用优惠券：</span><span>满200-10</span></p>
+				<p><span class="fixwidth">厂家积分：</span><span>30</span></p>
+				<p><span class="fixwidth">专营店积分：</span><span>19</span></p>
+
+				<!--<p><span class="fixwidth">已付款：</span><span>689.00元      </span></p>-->
+			</div>
+
+		</div>
+
+		<div class="serviceInfo">
+			<p class="underLine">联系方式</p>
+			<label class="mui-icon name"><input type="text" placeholder="请输入你的姓名"><span class="mui-icon-checkbox"></span><span>先生</span>
+			<span class="mui-icon-checkbox-filled"></span><span>女神</span></label>
+			<label class="mui-icon shouji"><input type="tel" placeholder="请输入你的手机号码"></label>
+
+		</div>
+		<div class="remark">
+			<p>备注信息</p>
+			<textarea placeholder="玄天，可描述车况或者该服务">
+				
+			</textarea>
+		</div>
+
+		<div class="save">
+			<p><span>实付：</span><span>￥386.00元</span><i>￥486元</i></p>
+			<p class="bgColor mui-pull-right">提交订单</p>
+		</div>
+
+	</body>
+
+</html>

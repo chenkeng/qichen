@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>交车满意度调查问卷</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/rem.js"></script>
+		<style>
+			body {
+				background-color: #FFFFFF;
+				padding: .3rem;
+			}
+			
+			.question {
+				padding: .2rem;
+				border-bottom: 1px dashed #828282;
+			}
+			
+			.question p {
+				color: #333333;
+				font-size: .28rem;
+			}
+			
+			.choice {
+				margin-left: .2rem;
+			}
+			
+			.choice label {
+				margin-right: .3rem;
+				font-size: .28rem;
+			}
+			
+			.choice input {
+				margin-right: .2rem;
+				background-image: url(images/choiceon@2x.png);
+			}
+			
+			.score {
+				list-style: none;
+				font-size: 0;
+				text-align: center;
+			}
+			
+			.score span {
+				width: .56rem;
+				font-size: .24rem;
+				display: inline-block;
+				text-align: center;
+				border-top: 1px solid #dcdcdc;
+				border-bottom: 1px solid #DCDCDC;
+				border-left: 1px solid #DCDCDC;
+			}
+			
+			.score span.active {
+				background-color: #0097E0;
+				color: #FFFFFF;
+			}
+			
+			.score span:nth-child(10) {
+				border-right: 1px solid #DCDCDC;
+			}
+			
+			.instruction {
+				margin: 0;
+			}
+			
+			.instruction span {
+				color: #8a8a8a;
+				font-size: .22rem;
+			}
+			
+			.instruction span:nth-child(2) {
+				margin-left: 1rem;
+			}
+			
+			.impressive {
+				margin-top: .4rem;
+			}
+			
+			fieldset {
+				/*text-align: center;*/
+				border: none;
+				border-top: 1px solid #DCDCDC;
+			}
+			
+			fieldset legend {
+				text-align: center;
+				/*margin-bottom: .2rem;*/
+			}
+			
+			fieldset span {
+				display: inline-block;
+				border: 1px solid #DCDCDC;
+				margin: 0 .2rem .2rem 0;
+				padding: .1rem .2rem;
+				font-size: .28rem;
+				color: #333333;
+			}
+			
+			legend {
+				background: url(images/title@2x.png) no-repeat center center;
+				background-size: contain;
+				padding: .2rem;
+			}
+			
+			textarea {
+				text-indent: -1rem;
+				font-size: .24rem;
+				color: #8a8a8a;
+				margin: 0;
+				padding: 0;
+				margin-bottom: .3rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+
+		<div class="question">
+			<p>1、您到店时，专营店工作人员是否及时接待您？</p>
+			<div class="choice">
+				<label for="" class="mui-icon mui-icon-checkbox">是</label><label class="mui-icon mui-icon-checkbox-filled">否</label>
+			</div>
+
+		</div>
+		<div class="question">
+			<p>2、你看车时，专营店是否关注您的购车需求？</p>
+			<div class="choice">
+				<label for="" class="mui-icon mui-icon-checkbox">是</label><label class="mui-icon mui-icon-checkbox-filled">否</label>
+
+				<!--<label for=""><input type="radio" name="yes">是</label><label for=""><input type="radio"  name="yes">否</label>-->
+			</div>
+		</div>
+		<div class="question">
+			<p>3、对您的购车需求，专营店给出的购买建议,您的满意度怎样？</p>
+			<div class="score">
+				<span>1</span>
+				<span class="active">2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+				<span>6</span>
+				<span>7</span>
+				<span>8</span>
+				<span>9</span>
+				<span>10</span>
+			</div>
+			<p class="instruction"><span class="mui-pull-left">1.非常不满意</span><span>6.一般</span><span class="mui-pull-right">10.非常满意</span></p>
+
+		</div>
+		<div class="question">
+			<p>4、您看车时，专营店是否充分向您说明您所 关注的产品信息？
+			</p>
+			<div class="choice">
+				<label for="" class="mui-icon mui-icon-checkbox">是</label><label class="mui-icon mui-icon-checkbox-filled">否</label>
+				<!--<label for=""><input type="radio" name="yes">是</label><label for=""><input type="radio"  name="yes">否</label>-->
+			</div>
+		</div>
+		<div class="question">
+			<p>5、销售人员的车辆专业知识，您的满意度怎样？</p>
+			<div class="score">
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+				<span class="active">6</span>
+				<span>7</span>
+				<span>8</span>
+				<span>9</span>
+				<span>10</span>
+			</div>
+			<p class="instruction"><span class="mui-pull-left">1.非常不满意</span><span>6.一般</span><span class="mui-pull-right">10.非常满意</span></p>
+
+		</div>
+		<div class="question">
+			<p>6、您购车时，销售人员是否主动向您提供试 乘试驾？
+			</p>
+			<div class="choice">
+				<label for="" class="mui-icon mui-icon-checkbox">是</label><label class="mui-icon mui-icon-checkbox-filled">否</label>
+
+				<!--<label for=""><input type="radio" name="yes">是</label><label for=""><input type="radio"  name="yes">否</label>-->
+			</div>
+		</div>
+
+		<div class="question">
+			<p>7、 对专营店提供的试乘/试驾服务，您的满 意度怎样？（如您未试乘试驾，请忽略此 题）
+			</p>
+			<div class="score">
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+				<span>6</span>
+				<span>7</span>
+				<span>8</span>
+				<span>9</span>
+				<span>10</span>
+			</div>
+			<p class="instruction"><span class="mui-pull-left">1.非常不满意</span><span>6.一般</span><span class="mui-pull-right">10.非常满意</span></p>
+
+		</div>
+		<div class="question">
+			<p>8、您提车时，专营店是否向您介绍售后服务 顾问及车辆免费的首二保政策？
+			</p>
+			<div class="choice">
+				<label for="" class="mui-icon mui-icon-checkbox">是</label><label class="mui-icon mui-icon-checkbox-filled">否</label>
+
+			</div>
+		</div>
+		<div class="question">
+			<p>9、 您提车时，对新车内外状况良好的满意程 度怎样？
+			</p>
+			<div class="score">
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+				<span>6</span>
+				<span>7</span>
+				<span>8</span>
+				<span>9</span>
+				<span>10</span>
+			</div>
+			<p class="instruction"><span class="mui-pull-left">1.非常不满意</span><span>6.一般</span><span class="mui-pull-right">10.非常满意</span></p>
+
+		</div>
+		<div class="question">
+			<p>10、 您提车时，专营店向您介绍车辆的配置 及操作方法，您的满意程度怎样？
+			</p>
+			<div class="score">
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+				<span>6</span>
+				<span>7</span>
+				<span>8</span>
+				<span>9</span>
+				<span>10</span>
+			</div>
+			<p class="instruction"><span class="mui-pull-left">1.非常不满意</span><span>6.一般</span><span class="mui-pull-right">10.非常满意</span></p>
+
+		</div>
+		<div class="question">
+			<p>11、您提车时，专营店是否为您举行了交车仪 式？
+			</p>
+			<div class="choice">
+				<label for="" class="mui-icon mui-icon-checkbox">是</label><label class="mui-icon mui-icon-checkbox-filled">否</label>
+				<!--<label for=""><input type="radio" name="yes">是</label><label for=""><input type="radio"  name="yes">否</label>-->
+			</div>
+		</div>
+		<div class="question">
+			<p>12、您提车后，专营店是否有人和您联系，询 问您车况及用车满意状况？
+			</p>
+			<div class="choice">
+				<label for="" class="mui-icon mui-icon-checkbox">是</label><label class="mui-icon mui-icon-checkbox-filled">否</label>
+				<!--<label for=""><input type="radio" name="yes">是</label><label for=""><input type="radio"  name="yes">否</label>-->
+			</div>
+		</div>
+		<div class="question">
+			<p>13、 对专营店的回访关怀服务，您的满意程 度怎样？（如专营店未回访您，请忽略 此题）
+			</p>
+			<div class="score">
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+				<span>6</span>
+				<span>7</span>
+				<span>8</span>
+				<span>9</span>
+				<span>10</span>
+			</div>
+			<p class="instruction"><span class="mui-pull-left">1.非常不满意</span><span>6.一般</span><span class="mui-pull-right">10.非常满意</span></p>
+
+		</div>
+		<div class="question">
+			<p>14、 您本次购车的总体满意程度怎样？
+			</p>
+			<div class="score">
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+				<span>6</span>
+				<span>7</span>
+				<span>8</span>
+				<span>9</span>
+				<span>10</span>
+			</div>
+			<p class="instruction"><span class="mui-pull-left">1.非常不满意</span><span>6.一般</span><span class="mui-pull-right">10.非常满意</span></p>
+
+		</div>
+		<div class="impressive">
+			<fieldset id="">
+				<legend>专营店印象</legend>
+				<span>交通便利</span>
+				<span>环境很好</span>
+				<span>超赞专营店</span>
+				<span>销售有礼貌</span>
+				<span>销售很专业</span>
+				<span>服务周到</span>
+				<span>交车快</span>
+				<span>试驾服务好</span>
+
+			</fieldset>
+		</div>
+
+		<div class="impressive">
+			<fieldset id="">
+				<legend>产品印象</legend>
+				<span>酷</span>
+				<span>年轻时尚</span>
+				<span>有驾驶乐趣</span>
+				<span>性价比高</span>
+				<span>视野开阔</span>
+				<span>安全性高</span>
+				<span>很省油</span>
+				<span>加速快 </span>
+
+			</fieldset>
+		</div>
+		<textarea placeholder="对经销商的服务建议，说说看吧。。。">
+			对经销商的服务建议，说说看吧。。。
+		</textarea>
+
+		<input class="mui-btn-block" type="submit" name="" id="" value="提交" />
+	</body>
+
+</html>

@@ -1,0 +1,261 @@
+<!doctype html>
+
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+
+		<title></title>
+
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+		<link href="css/mui.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/rem.js"></script>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.keepItem {
+				background-color: #FFFFFF;
+				padding: 0 .3rem;
+			}
+			
+			.keepItem p {
+				height: .75rem;
+				line-height: .75rem;
+				margin: 0;
+			}
+			
+			.keepItem p:nth-child(1) {
+				line-height: 1.2rem;
+				color: #2C2C2C;
+				font-size: .3rem;
+			}
+			
+			.keepItem p span {
+				font-size: .24rem;
+			}
+			
+			.keepItem p span:nth-child(2) {
+				font-size: .28rem;
+				color: #2C2C2C;
+			}
+			
+			.shop {
+				padding: .3rem .3rem .1rem .3rem;
+				margin-top: .3rem;
+				background-color: #FFFFFF;
+				/*border-bottom: 1px solid silver;*/
+			}
+			
+			.shop p span:nth-child(1) {
+				padding-right: .3rem;
+				color: #2C2C2C;
+			}
+			
+			.phone,
+			.map {
+				display: inline-block;
+				width: .36rem;
+				height: .36rem;
+				background-position: 0 0;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			
+			.phone {
+				background-image: url(images/phone@2x.png);
+				margin-left: .2rem;
+			}
+			
+			.map {
+				width: .56rem;
+				background-image: url(images/map@2x.png);
+				border-right: 1px solid silver;
+				padding-right: .2rem;
+			}
+			
+			.shopDetails {
+				padding: 0 .3rem;
+				background-color: #FFFFFF;
+				border-bottom: 1px solid #DEDEDE;
+				border-bottom: 1px solid #DEDEDE;
+    border-top: 1px solid #dedede;
+			}
+			
+			.shopDetails p {
+				height: .8rem;
+				line-height: .8rem;
+				margin: 0;
+			}
+			
+			.carInfo {
+				padding: .3rem;
+				background-color: #FFFFFF;
+			}
+			
+			.serviceInfo,
+			.connectInfo,
+			.remark,
+			.payWays {
+				padding: 0 .3rem;
+				background-color: #FFFFFF;
+			}
+			
+			.carInfo>p,
+			.serviceInfo>p,
+			.connectInfo>p,
+			.remark>p,
+			.payWays>p {
+				background-color: #eaeaea;
+				height: .56rem;
+				line-height: .56rem;
+				padding-left: .1rem;
+				margin: 0;
+				color: #2C2C2C;
+			}
+			
+			.carModel {
+				width: 63%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.carModel p{
+				line-height: .4rem;
+			}
+			.service>p,
+			.describe>p {
+				margin: 0;
+				/*padding-left: .3rem;*/
+				height: .6rem;
+				line-height: .6rem;
+				color: #828282;
+			}
+			
+			.service>p span:nth-child(2),
+			.describe>p span:nth-child(2) {
+				color: #828282;
+				/*margin-left: .4rem;*/
+				float: right;
+			}
+			
+			.carImg {
+				display: inline-block;
+				width: 35%;
+				vertical-align: middle;
+			}
+			
+			.carImg img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.orderInfo {
+				margin-top: .3rem;
+				padding: .3rem;
+				background-color: #FFFFFF;
+			}
+			
+			.save {
+				padding: .3rem;
+			}
+			
+			.save button {
+				border: 1px solid #0097E0;
+				color: #0097E0;
+			}
+			
+			.save .primary {
+				background-color: #0097E0;
+				color: #FFFFFF;
+			}
+			hr{background-color: #828282;}
+		</style>
+
+	</head>
+
+	<body>
+
+		<script src="js/mui.min.js"></script>
+
+		<script type="text/javascript">
+			mui.init()
+		</script>
+
+		<div class="keepItem">
+
+			<p>自助保养每50000公里送全车打蜡</p>
+
+			<p><span class="mui-pull-left">2015年12月12日</span><span class="mui-pull-right">已受理</span></p>
+
+		</div>
+
+		<div class="shop">
+			<p><span>门店：</span><span>广州丰日电</span><span class="mui-pull-right"><a class="map"></a><a class="phone"></a></span></p>
+			<p><span>地址：</span><span>广州市花都区风神达到2号</span></p>
+			<p><span>时间：</span><span>2016年5月20好</span></p>
+			<p><span>顾问：</span><span>李炳辉</span></p>
+		</div>
+		<div class="shopDetails">
+			<p><span class="blackFont">订单详情</span><span><img src="" alt="" /></span><span class="mui-pull-right"><img src="images/arrowdown@2x.png"/></span></p>
+		</div>
+		<div class="carInfo">
+			<p>车辆信息</p>
+			<div class="carModel">
+				<p>京A12344445 <br />
+				新天籁 2.0L X-Sporty 欧冠远东版</p>
+			</div>
+			<div class="carImg"><img src="images/car.png" alt="" /></div>
+		</div>
+		<div class="serviceInfo">
+			<p>服务内容</p>
+			<div class="service">
+				<p>资助保养<span class="mui-pull-right">463.00元</span></p>
+				<p>更换空气陆清气<span class="mui-pull-right">463.00元</span></p>
+				<p class="graybottom">润滑系统包邮<span class="mui-pull-right">463.00元</span></p>
+			
+				<p><span>保养里程：</span><span>3400公里</span></p>
+			</div>
+		</div>
+		<div class="connectInfo">
+			<p>联系人</p>
+			<div class="describe">
+				<p><span class="">张天山</span><span>13802605666</span></p>
+			</div>
+		</div>
+		<div class="remark">
+			<p>备注 </p>
+			<div class="describe">
+				<p>发动机影响，请检查。麻烦再非工作时间才联系我</p>
+			</div>
+		</div>
+
+		<div class="payWays">
+			<p>支付方式 </p>
+			<div class="describe">
+				<p><span>支付方式：</span><span>在线支付</span></p>
+				<p><span>使用优惠券：</span><span>满200-10</span></p>
+				<p><span>厂家积分：</span><span>30</span></p>
+				<p class="graybottom"><span>专营店积分：</span><span>19</span></p>
+				<p><span>已付款：</span><span>689.00元      </span></p>
+			</div>
+		</div>
+
+		<div class="orderInfo">
+			<p><span class="blackFont">提交时间：</span><span class="mui-pull-right">2055-12-12</span></p>
+			<p><span class="blackFont">预约编号：</span><span class="mui-pull-right">20555556576</span></p>
+		</div>
+
+		<div class="save">
+			<button class="mui-btn-block primary">取消订单</button>
+			<button class="mui-btn-block">立即付款</button>
+		</div>
+
+	</body>
+
+</html>

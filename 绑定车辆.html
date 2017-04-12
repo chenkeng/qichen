@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/rem.js"></script>
+		<style>
+			body {
+				background-color: #F3f8fb;
+			}
+			
+			.mui-content {
+				width: 100%;
+				height: 100%;
+				/*background-color: #FFFFFF;*/
+			}
+			
+			#identify {
+				width: 4rem;
+				display: inline-block;
+			}
+			
+			.vertifyCode {
+				display: inline-block;
+				width: 2.4rem;
+				height: .6rem;
+				background-color: #e2e2e2;
+				text-align: center;
+				line-height: .6rem;
+			}
+			
+			#save {
+				/*padding: 0 .3rem;*/
+				margin-top: .9rem;
+				width: 100%;
+				height: .8rem;
+			}
+			
+			
+			mui-input-group:after {
+				content: "";
+			}
+			
+			#carInfo {
+				background-color: #F3f8fb;
+				padding: .6rem .3rem 0 .3rem;
+			}
+			
+			#carInfo>input {
+				border: none;
+				border-bottom: 1px solid #b3b3b3;
+				border-radius: 0;
+				background-color: #F3f8fb;
+			}
+			
+			.addCarBg {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				height: 3.6rem;
+			}
+			
+			.addCarBg img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.question {
+				background: url(images/grayquestion@2x.png) no-repeat right center;
+				background-size: .3rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+
+		<div class="mui-content">
+			<form id="carInfo">
+				<input type="text" placeholder="请输入车牌号/VIN码/会员号" class="fontsize28 blackFont question">
+				<input type="text" name="" id="identify" value="" placeholder="请输入验证码" class="fontsize28 blackFont">
+				<span class="vertifyCode mui-pull-right">
+					6789
+				</span>
+				<div id="save">
+
+					<input type="submit" class="" value="保存" />
+				</div>
+			</form>
+
+			<div class="addCarBg">
+				<img src="images/banner2.png" alt="" />
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/rem.js"></script>
+		<style>
+			.mui-content{
+				background-color: #FFFFFF;
+			}
+			.record {
+				background-color: #FFFFFF;
+				margin-left: .3rem;
+				margin-right: .3rem;
+				padding-top: .3rem;
+				border-bottom: 1px solid #f6f6f6;
+			}
+			
+			.record p span:nth-child(1) {
+				font-size: .28rem;
+				color: #2e2e2e;
+			}
+			
+			.record p span:nth-child(2) {
+				font-size: .26rem;
+				color: #f3ce00;
+			}
+			
+			.record p span:nth-child(2).activeColor {
+				color: #12d693;
+			}
+			
+			.record p span:nth-child(2).defaultColor {
+				color: #828282;
+			}
+			
+			.record p:nth-child(2) {
+				font-size: .24rem;
+				color: #828282;
+			}
+			
+			.unRecord{
+				margin: 2.45rem auto;
+				width: 100%;
+				text-align: center;
+				
+			}
+			.unRecord img{
+				width: 2rem;height: 3rem;
+			}
+			.unRecord p{
+				margin-top: .2rem;
+				font-size: .3rem;
+			}
+			.unRecord a{
+				margin-top: .6rem;
+				padding: .2rem .6rem;
+				font-size: .3rem;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+
+		<div class="mui-content" style="display: none;">
+			<div class="record">
+				<p class="mui-clearfix"><span class="mui-pull-left">闯红灯</span><span class="mui-pull-right">待支付</span></p>
+				<p>2015年12月12日&nbsp;14:35</p>
+			</div>
+			<div class="record">
+				<p class="mui-clearfix"><span class="mui-pull-left">闯红灯</span><span class="mui-pull-right activeColor">待支付</span></p>
+				<p>2015年12月12日&nbsp;14:35</p>
+			</div>
+			<div class="record">
+				<p class="mui-clearfix"><span class="mui-pull-left">闯红灯</span><span class="mui-pull-right">待支付</span></p>
+				<p>2015年12月12日&nbsp;14:35</p>
+			</div>
+			<div class="record">
+				<p class="mui-clearfix"><span class="mui-pull-left">闯红灯</span><span class="mui-pull-right defaultColor">待支付</span></p>
+				<p>2015年12月12日&nbsp;14:35</p>
+			</div>
+			<div class="record">
+				<p class="mui-clearfix"><span class="mui-pull-left">闯红灯</span><span class="mui-pull-right">待支付</span></p>
+				<p>2015年12月12日&nbsp;14:35</p>
+			</div>
+		</div>
+		
+		<div class="unRecord">
+			<img src="images/unRecord@2x.png" alt="" />
+			<p>恭喜你，暂无违章记录</p>
+			<a class="mui-btn">返回首页</a>
+		</div>
+	</body>
+
+</html>

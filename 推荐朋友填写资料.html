@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/rem.js"></script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0
+			}
+			body{
+				background: url(images/friends.png) no-repeat left top;
+				background-size: contain;
+				background-color: white;
+			}
+			form{
+				margin-top: 5rem;
+				background-color: white;
+			}
+			.carname,
+			.carpwd,
+			.carmodel,
+			.carshop {
+				width: 100%;
+				height: 1rem;
+				line-height: 1rem;
+				border-bottom: 1px solid #EEEEEE;
+			}
+			input{
+				font-size: .24rem;
+			}
+			.carname>input[type='text'] {
+				margin: 0;
+				width: 60%;
+				height: .8rem;
+				line-height: .8rem;
+				text-indent: .8rem;
+				border: none;
+				background-image: url(images/name@2x.png);
+				background-repeat: no-repeat;
+				background-position: .3rem center;
+				background-size: .4rem;
+				/*background-color: #EEEEEE;*/
+			}
+			
+			.carpwd>input[type="password"] {
+				margin: 0;
+				height: .8rem;
+				line-height: .8rem;
+				text-indent: .8rem;
+				border: none;
+				background-image: url(images/openphone@2x.png);
+				background-repeat: no-repeat;
+				background-position: .3rem center;
+				background-size: .4rem;
+			}
+			
+			.carmodel input[type="text"] {
+				width: 90%;
+				margin: 0;
+				display: inline-block;
+				height: .8rem;
+				line-height: .8rem;
+				text-indent: .8rem;
+				border: none;
+				background-image: url(images/Traffic.png);
+				background-repeat: no-repeat;
+				background-position: .3rem center;
+				background-size: .4rem;
+				/*background-color: #EEEEEE;*/
+			}
+			
+			.carshop input[type="text"] {
+				width: 90%;
+				margin: 0;
+				display: inline-block;
+				height: .8rem;
+				line-height: .8rem;
+				text-indent: .8rem;
+				border: none;
+				background-image: url(images/Shop.png);
+				background-repeat: no-repeat;
+				background-position: .3rem center;
+				background-size: .4rem;
+				/*background-color: #EEEEEE;*/
+			}
+			.carmodel span,.carshop span{
+				color: #828282;
+				display: inline-block;
+				height: .6rem;
+				width: .4rem;
+			}
+			.man {
+				display: inline-block;
+				width: 20%;
+				text-indent: .5rem;
+				background-image: url(images/choiceoff@2x.png);
+				background-repeat: no-repeat;
+				background-position: left center;
+				background-size: .4rem;
+			}
+			
+			.women {
+				display: inline-block;
+				width: 20%;
+				text-indent: .5rem;
+				background-image: url(images/choiceon@2x.png);
+				background-repeat: no-repeat;
+				background-position: left center;
+				background-size: .4rem;
+			}
+			.save{margin: 0 .3rem;}
+			.save input{
+				margin-top: .3rem;
+				width: 100%;
+				height: .8rem;
+				background-color: #0097E0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<form action="" >
+
+			<div class="carname">
+				<input type="text" placeholder="请输入您的名字"><span class="man">男神</span><span class="women">女神</span>
+			</div>
+			<div class="carpwd">
+				<input type="password" placeholder="请输入您的密码">
+			</div>
+			<div class="carmodel">
+				<a href="">
+					<input type="text" placeholder="请选择车型" disabled><span>&gt;</span>
+				</a>
+			</div>
+			<div class="carshop">
+				<a href="">
+					<input type="text" placeholder="请选择店铺" disabled><span>&gt;</span>
+				</a>
+			</div>
+
+		</form>
+		<div class="save">
+			<input type="submit" value="提交推荐">
+			
+		</div>
+
+	</body>
+
+</html>

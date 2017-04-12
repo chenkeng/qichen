@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/rem.js"></script>
+		<style>
+			.headerBg {
+				height: 3.12rem;
+				width: 100%;
+				background-image: url(images/banner1.png);
+				background-position: 0 0;
+				background-size: cover;
+				background-repeat: no-repeat;
+				position: relative;
+				left: 0;
+				padding: 0;
+			}
+			
+			.memberInfo {
+				width: 100%;
+				padding: 1rem .4rem 0 .4rem;
+			}
+			
+			.avtor,
+			.member,
+			.takePartIn {
+				display: inline-block;
+			}
+			
+			.avtor {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+			
+			.avtor img {
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+			}
+			
+			.member {
+				width: 2rem;
+				margin: 0 .5rem;
+				height: 1.5rem;
+				/*background-color: red;*/
+				vertical-align: top;
+			}
+			
+			.member p {
+				height: 0.4rem;
+				line-height: 0.8rem;
+				font-size: .24rem;
+			}
+			
+			.member p:nth-child(1) {
+				color: #FFFFFF;
+			}
+			
+			.member p:nth-child(2) {
+				color: #bdbdbd;
+			}
+			
+			.takePartIn {
+				width: 1.5rem;
+				vertical-align: top;
+				margin-top: .4rem;
+			}
+			
+			.takePartIn a {
+				background-color: #0097E0;
+			}
+			
+			.count {
+				width: 100%;
+				height: .88rem;
+				background-color: #FFFFFF;
+			}
+			
+			.count p {
+				display: inline-block;
+				width: 49%;
+				padding: 0 1rem;
+			}
+			
+			.count p span {
+				/*width:100%;*/
+				height: .88rem;
+				line-height: .88rem;
+				display: inline-block;
+				text-align: center;
+				margin: 0 auto;
+			}
+			
+			#record {
+				float: right;
+				font-size: .24rem;
+				color: #828282;
+				font-style: normal;
+			}
+			.mui-grid-view.mui-grid-9{
+				background-color: #FFFFFF;
+			}
+			#feedBack{
+				margin-top: .3rem;
+			}
+			#serviceRecord{
+				border: none;
+			}
+			#serviceRecord img{
+				width: .8rem;height: .8rem;
+			}
+			.mui-grid-view.mui-grid-9 .mui-table-view-cell{
+				border: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+
+		<header>
+			<div class="headerBg">
+				<div class="memberInfo">
+					<div class="avtor"><img src="images/car.png" alt="" /></div>
+					<div class="member">
+						<p>盛夏光年</p>
+						<p>还不是会员</p>
+					</div>
+					<div class="takePartIn">
+						<a class="mui-btn mui-btn-primary">立即入会</a>
+					</div>
+				</div>
+			</div>
+			<div class="count">
+				<p><span>积分：</span><span>暂无</span></p>
+				<p><span>优惠：</span><span>暂无</span></p>
+			</div>
+
+		</header>
+		<div class="serviceRecord">
+			<p class="mui-navigate-right"><span></span></p>
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell">
+
+					<a href="#about" class="mui-navigate-right">服务记录 <i id="record" class="mui-pull-right update">订单、关注等</i></a>
+				</li>
+				<li class="mui-table-view">
+					<ul class="mui-table-view mui-grid-view mui-grid-9" id="serviceRecord">
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="#">
+								<img src="images/center-order@2x.png" />
+								<div class="mui-media-body">预约订单</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="#">
+								<img src="images/center-card@2x.png" />
+								<div class="mui-media-body">优惠券</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="#">
+								<img src="images/center-comment@2x.png" />
+								<div class="mui-media-body">点评</div>
+							</a>
+						</li>
+
+					</ul>
+
+				</li>
+
+			</ul>
+		</div>
+
+		<ul class="mui-table-view mui-table-view-chevron" id="feedBack">
+			<li class="mui-table-view-cell">
+				<a href="#notifications" class="mui-navigate-right">个人资料</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="#privacy" class="mui-navigate-right">意见反馈</a>
+			</li>
+
+		</ul>
+	</body>
+
+</html>

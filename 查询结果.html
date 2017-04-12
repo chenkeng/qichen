@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/rem.js"></script>
+		<style>
+			.mui-content {
+				margin-bottom: .3rem;
+			}
+			
+			.title {
+				font-size: .28rem;
+				background-color: #FFFFFF;
+				height: 1rem;
+				line-height: 1rem;
+				padding-left: .2rem;
+			}
+			
+			.detail {
+				margin: 0;
+				list-style: none;
+				background-color: #FFFFFF;
+				padding: .1rem 0;
+				height: 1.5rem;
+				line-height: .7rem;
+			}
+			
+			.detail li {
+				text-align: center;
+				display: inline-block;
+				width: 30%;
+			}
+			
+			.scoreTitle {
+				margin: 0;
+				list-style: none;
+				background-color: #FFFFFF;
+				padding: .1rem 0;
+				height: 1.5rem;
+				line-height: .7rem;
+			}
+			
+			.scoreTitle li {
+				text-align: center;
+				display: inline-block;
+				width: 18%;
+			}
+			
+			.mui-content p {
+				background-color: #FFFFFF;
+				margin: 0;
+				height: .6rem;
+				line-height: .6rem;
+			}
+			
+			.mui-content p span:nth-child(1) {
+				padding: .1rem .3rem;
+			}
+			
+			.rapidHandle {
+				background-color: #FFFFFF;
+				height: 1.5rem;
+				line-height: 1.5rem;
+			}
+			
+			.rapidHandle span {
+				padding: .1rem .3rem;
+				font-size: .28rem;
+			}
+			
+			.submitOrder p {
+				text-align: center;
+				height: 1.2rem;
+				line-height: 2.2rem;
+				font-size: .36rem;
+				margin: 0;
+				margin-bottom: .3rem;
+			}
+			
+			.order {
+				/*position: absolute;
+				left: 0;
+				bottom: 0;*/
+				height: .8rem;
+				line-height: .8rem;
+				background-color: #FFFFFF;
+				width: 100%;
+			}
+			
+			.order span {
+				margin-left: .4rem;
+			}
+			
+			.order a {
+				width: 2.5rem;
+				height: .8rem;
+				display: inline-block;
+				background-color: #0097E0;
+				text-align: center;
+				color: #FFFFFF;
+			}
+			.question {
+				background: url(images/grayquestion@2x.png) no-repeat right center;
+				background-size: .3rem;
+				padding-right: .4rem;
+			}
+			.question span label span{
+				font-size: .28rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+
+		<div class="mui-content">
+			<div class="title">粤A A5498</div>
+			<ul class="detail">
+				<li><span class="grayFont">违章</span><br /><span>1笔</span></li>
+				<li><span class="grayFont">扣分</span><br /><span>0分</span></li>
+				<li><span class="grayFont">罚款</span><br /><span>200元</span></li>
+			</ul>
+		</div>
+
+		<div class="mui-content">
+			<ul class="scoreTitle">
+				<li> <span class="grayFont">扣分</span><br /><span>0</span> </li>
+				<li> <span class="grayFont">罚金</span><br /><span>200</span> </li>
+				<li> <span class="grayFont">滞纳金</span><br /><span>0</span> </li>
+				<li> <span class="grayFont">服务费</span><br /><span>20</span> </li>
+				<li><label class="mui-icon mui-icon-checkbox-filled"></label></li>
+			</ul>
+			<p><span>时间：</span><span class="blackFont">2016-04-01 10：15：23</span></p>
+			<p><span>城市：</span><span class="blackFont">广州番禺</span></p>
+			<p><span>地址：</span><span class="blackFont">康乐路路段</span></p>
+			<p><span>行为：</span><span class="blackFont">机动车临时停车</span></span>
+			</p>
+			<div class="rapidHandle">
+				<span>该笔可代办</span><span class="mui-pull-right"> <label class="mui-icon mui-icon-checkbox-filled question"><span>2小时速办</span></lable> </span>
+			</div>
+		</div>
+		<div class="mui-content">
+			<ul class="scoreTitle">
+				<li> <span class="grayFont">扣分</span><br /><span>0</span> </li>
+				<li> <span class="grayFont">罚金</span><br /><span>200</span> </li>
+				<li> <span class="grayFont">滞纳金</span><br /><span>0</span> </li>
+				<li> <span class="grayFont">服务费</span><br /><span>20</span> </li>
+				<li><label class="mui-icon mui-icon-checkbox-filled"></label></li>
+			</ul>
+			<p><span>时间：</span><span class="blackFont">2016-04-01 10：15：23</span></p>
+			<p><span>城市：</span><span class="blackFont">广州番禺</span></p>
+			<p><span>地址：</span><span class="blackFont">康乐路路段</span></p>
+			<p><span>行为：</span><span class="blackFont">机动车临时停车</span></span>
+			</p>
+			<div class="rapidHandle">
+				<span>该笔不可代办</span>
+			</div>
+		</div>
+		<div class="submitOrder">
+			<p>
+				服务热线：
+				<a href="tel:400-804-3899">400-804-3899</a>
+			</p>
+			<div class="order">
+				<span>办理<i>1</i>笔</span><span> 合计<i>220</i>元</span>
+				<a class="mui-pull-right">提交</a>
+			</div>
+
+		</div>
+	</body>
+
+</html>

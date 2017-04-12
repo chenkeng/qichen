@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>提交订单</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/rem.js"></script>
+		<style>
+			.orderInfo p {
+				height: .8rem;
+				line-height: 1rem;
+				margin: 0;
+				padding-left: .2rem;
+			}
+			
+			.fee {
+				margin: 0;
+				list-style: none;
+				background-color: #FFFFFF;
+				padding: .1rem 0;
+				height: 1.5rem;
+				line-height: .7rem;
+			}
+			
+			.fee li {
+				text-align: center;
+				display: inline-block;
+				width: 30%;
+			}
+			
+			.connectInfo {
+				width: 100%;
+				/*margin: .2rem;*/
+				list-style: none;
+				padding: 0;
+				padding-left: .2rem;
+				padding-bottom: .2rem;
+				font-size: .28rem;
+				background-color: #FFFFFF;
+			}
+			
+			.connectInfo li:nth-child(1) {
+				border-bottom: 1px solid silver;
+			}
+			
+			.connectInfo li:nth-child(2) {
+				border-bottom: 1px solid silver;
+			}
+			
+			.connectInfo li:nth-child(3) {
+				height: 1.3rem;
+				line-height: 1.3rem;
+			}
+			
+			.connectInfo label {
+				width: 20%;
+				display: inline-block;
+			}
+			
+			.connectInfo input {
+				width: 75%;
+				font-size: .28rem;
+				border: none;
+				margin: 0;
+			}
+			
+			.connectInfo button {
+				vertical-align: middle;
+				margin-left: .3rem;
+			}
+			
+			.instruction {
+				list-style: none;
+				padding: 0;
+				background-color: #FFFFFF;
+				margin: 0;
+				padding: .2rem 0;
+				height: 3rem;
+				line-height: .5rem;
+			}
+			
+			.instruction li {
+				padding-left: .3rem;
+				font-size: .28rem;
+				margin-top: .24rem;
+			}
+			.submitOrder p{
+				text-align: center;
+				height: 1.2rem;
+				line-height: 2.2rem;
+				font-size: .36rem;
+			}
+			.order{
+				position: absolute;
+				left: 0;bottom: 0;
+				height: .8rem;
+				line-height: .8rem;
+				background-color: #FFFFFF;
+				width: 100%;
+			}
+			.order span{margin-left: .4rem;}
+			.order a{
+				width: 2.5rem;
+				height: .8rem;
+				display: inline-block;
+				background-color: #0097E0;
+				text-align: center;
+				color: #FFFFFF;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<div class="orderInfo">
+			<p>办理费用</p>
+			<ul class="fee">
+				<li><span>罚款</span><br /><span>200元</span></li>
+				<li><span>滞纳金</span><br /><span>0元</span></li>
+				<li><span>服务费</span><br /><span>20元</span></li>
+			</ul>
+		</div>
+		<div class="orderInfo">
+			<p>联系信息</p>
+			<ul class="connectInfo">
+				<li><label>联系人</label><input type="text" placeholder="请输入完整姓名"></li>
+				<li><label>联系电话</label><input type="text" placeholder="请输入11位手机号码"></li>
+				<li>车辆所有人类型 <button>私人车</button><button>单位车</button></li>
+			</ul>
+
+		</div>
+		<div class="orderInfo">
+			<p>办理说明</p>
+			<ul class="instruction">
+				<li>1.由于各地政策差异，部分地区暂未实行扣分，可办理违章均不扣去车主分数；</li>
+				<li>2.订单提交后，1-3个工作日内处理完成。如无法正常处理，相关费用将全额退回</li>
+
+			</ul>
+		</div>
+		<div class="submitOrder">
+			<p>
+				服务热线：<a href="tel:400-804-3899">400-804-3899</a>
+			</p>
+			<div class="order">
+				<span>办理<i>1</i>笔</span><span> 合计<i>220</i>元</span>
+			<a class="mui-pull-right">提交</a>
+			</div> 
+			
+		</div>
+	</body>
+
+</html>

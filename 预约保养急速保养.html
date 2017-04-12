@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/rem.js"></script>
+		<style>
+			.careWays {
+				background-color: #FFFFFF;
+				padding: .2rem;
+				margin: .3rem;
+			}
+			
+			.checkon {
+				width: 10%;
+				display: inline-block;
+				margin-top: .8rem;
+			}
+			
+			.careFee {
+				display: inline-block;
+				width: 90%
+			}
+			
+			.careFee p:nth-child(1) {
+				font-size: .28rem;
+			}
+			
+			.careFee p {
+				font-size: .24rem;
+			}
+			
+			.wrap {
+				background-color: #FFFFFF;
+				padding: 0 .2rem;
+				border-bottom: 1px solid silver;
+				margin-bottom: .3rem;
+			}
+			
+			.title {
+				border-bottom: 1px solid silver;
+			}
+			
+			.title p,
+			.items p {
+				margin: 0;
+				/*height: .7rem;*/
+				line-height: .6rem;
+			}
+			
+			.title p span:nth-child(1) {
+				border-left: 2px solid #0097E0;
+				padding-left: .1rem;
+				font-size: .28rem;
+			}
+			
+			.title p span .mui-pull-right {
+				color: #0097E0;
+			}
+			
+			.mui-btn {
+				padding: .05rem .1rem;
+				margin-top: .1rem;
+			}
+			
+			.items i {
+				border: 1px dashed #0097E0;
+				color: #0097E0;
+			}
+			
+			.fontBlue {
+				color: #0097E0;
+			}
+			
+			.total {
+				height: .9rem;
+				line-height: .9rem;
+				background-color: #FFFFFF;
+			}
+			
+			.total p {
+				padding-left: .3rem;
+			}
+			
+			.total i {
+				color: #0097E0;
+			}
+			
+			.total a {
+				margin: 0;
+				height: .9rem;
+				line-height: .9rem;
+				padding: 0 .4rem;
+				display: inline-block;
+				color: #FFFFFF;
+				background-color: #0097E0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<div class="careWays mui-clearfix">
+			<div class="checkon mui-pull-left">
+				<p class="mui-icon mui-icon-checkbox"></p>
+			</div>
+			<div class="careFee mui-pull-right">
+				<p>急速保养<span class="mui-pull-right">398元 起</span></p>
+				<p>30 分钟极速小保养，更换机油/三滤，易损件检测； 建议每 5000 公里进行一次。可在线付款。</p>
+			</div>
+		</div>
+
+		<div class="careWays mui-clearfix">
+			<div class="checkon mui-pull-left">
+				<p class="mui-icon mui-icon-checkbox"></p>
+			</div>
+			<div class="careFee mui-pull-right">
+				<p>自助保养<span class="mui-pull-right">398元 起</span></p>
+				<p>在日常保养项目的基础上，可根据爱车的实际情况，自行添加其他增值项目，可在线付款。</p>
+			</div>
+		</div>
+		<div class="careWays mui-clearfix">
+			<div class="checkon mui-pull-left">
+				<p class="mui-icon mui-icon-checkbox"></p>
+			</div>
+			<div class="careFee mui-pull-right">
+				<p>其他保养<span class="mui-pull-right">398元 起</span></p>
+				<p>如享有免费首次保养、二次保养，以及已经购买专 营店保养包年套餐的用户，请选择此项。无需选择 保养项目或在线付款。
+				</p>
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="title">
+				<p><span>更换备件</span><span class="mui-pull-right">备件价格：236元</span></p>
+			</div>
+			<div class="items">
+				<p><span>合成机油 OW-40 SN级</span>
+					<a class="mui-btn mui-pull-right">修改</a>
+				</p>
+				<p><span>规格：5L <i>原厂备件</i></span><span class="mui-pull-right fontBlue">199元</span></p>
+			</div>
+		</div>
+		<div class="wrap">
+
+			<div class="items">
+				<p><span>合成机油 OW-40 SN级</span>
+					<a class="mui-btn mui-pull-right">修改</a>
+				</p>
+				<p><span>规格：5L</span><span class="mui-pull-right fontBlue">199元</span></p>
+			</div>
+		</div>
+		<div class="wrap">
+
+			<div class="items">
+				<p><span>机油滤清器总成</span></p>
+				<p><span>规格：5L</span><span class="mui-pull-right fontBlue">199元</span></p>
+			</div>
+		</div>
+
+		<div class="wrap">
+			<div class="title">
+				<p><span>检查项目</span><span class="mui-pull-right">工时：90分钟 工时费用：240元</span></p>
+			</div>
+			<div class="items">
+				<p>2万公里保养检查</p>
+				<p>调整点火系统 调整制动/传动/转向/排气系统/前后悬挂/底盘冷却系统/燃油系 统/变速箱油/门锁、铰链、天窗、发动机盖锁及后/行李箱锁/轮 胎换位/轮胎状况/电瓶状况
+				</p>
+			</div>
+		</div>
+		<div class="total">
+			<p>总价：<i>￥476.0</i>
+				<a class="mui-btn mui-pull-right"> 确定预约</a>
+			</p>
+		</div>
+	</body>
+
+</html>

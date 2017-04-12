@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>选择支付方式</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/rem.js"></script>
+		<style>
+			.payWays {
+				margin: .7rem;
+			}
+			.bottomCheck{
+				background-image: url(images/checkon@2x.png);
+				background-position: right bottom;
+				background-repeat: no-repeat;
+				background-size: .6rem;
+				    border: 1px solid #0097e0;
+			}
+			#hr{
+				background-color: #DEDEDE;height: .5px;
+				/*color: #DEDEDE;*/
+			}
+			.payWays a {
+				display: inline-block;
+				padding: .3rem .6rem;
+				padding-left: 1rem;
+			}
+			
+			.onshop {
+				background-image: url(images/onshop@2x.png);
+				background-position: .2rem center;
+				background-repeat: no-repeat;
+				background-size: .6rem;
+			}
+			
+			.online {
+				background-image: url(images/online@2x.png),url(images/checkon@2x.png);
+				background-position: .2rem center,right bottom;
+				background-repeat: no-repeat;
+				background-size: .6rem;
+			}
+			
+			.wrap {
+				background-color: #FFFFFF;
+				padding: .2rem;
+				margin-bottom: .3rem;
+			}
+			/*.wrap .title{border-bottom: 1px solid silver;}*/
+			
+			.wrap p {
+				margin: 0;
+				line-height: .7rem;
+			}
+			
+			.wrap input {
+				text-align: right;
+				width: 4rem;
+				margin: 0;
+				padding: 0;
+				border: none;
+				height: .6rem;
+				font-size: .24rem;
+			}
+			
+			.total {
+				height: .9rem;
+				line-height: .9rem;
+				background-color: #FFFFFF;
+			}
+			
+			.total p {
+				padding-left: .3rem;
+			}
+			
+			.total i {
+				color: #0097E0;
+			}
+			
+			.total a {
+				margin: 0;
+				height: .9rem;
+				line-height: .9rem;
+				padding: 0 .4rem;
+				display: inline-block;
+				color: #FFFFFF;
+				background-color: #0097E0;
+			}
+			
+			.total p {
+				margin: 0;
+			}
+			
+			.total p span {
+				text-decoration: line-through;
+				margin-left: .1rem;
+			}
+			.mui-icon-checkbox-filled{color: #0097E0;}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<div class="payWays mui-clearfix">
+			<a class="mui-btn mui-pull-left onshop">到点支付 </a>
+			<a class="mui-btn mui-pull-right online bottomCheck">在线支付</a>
+		</div>
+
+		<div class="wrap">
+			<div class="title">优惠券</div>
+			<hr id="hr"/>
+			<p>满200减20 <span class="mui-icon mui-icon-checkbox-filled mui-pull-right"></span></p>
+			<p>周年庆全场8折<span class="mui-icon mui-icon-checkbox mui-pull-right"></span></p>
+			<p>满200减20<span class="mui-icon mui-icon-checkbox mui-pull-right"></span></p>
+		</div>
+
+		<div class="wrap">
+			<p>会员折扣</p>
+			<hr id="hr"/>
+			<p>折扣金额<span class="mui-pull-right">-￥38元</span></p>
+		</div>
+
+		<div class="wrap">
+			<p>积分折扣<input class="mui-pull-right" type="text" placeholder="选填，1积分抵扣1元"></p>
+			<p>厂家积分<i>400</i><input class="mui-pull-right" type="text" placeholder="请输入要使用的积分数"></p>
+			<p><button>获取验证码</button> <input class="mui-pull-right" type="text" placeholder="请输入验证码"></p>
+		</div>
+
+		<div class="wrap">
+			<p>支付说明</p>
+			<hr id="hr" />
+			<p>若要取消订单，已支付的款项将在3至5个工作日内返还 到您的账户。敬请知悉。
+			</p>
+
+		</div>
+		<div class="total">
+			<p>实付<i>￥676.0</i><span>￥386.00</span>
+				<a class="mui-btn mui-pull-right"> 确定</a>
+			</p>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>违章办理详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/rem.js"></script>
+		<style>
+			.mui-content {
+				background-color: #FFFFFF;
+				padding-left: .3rem;
+				padding-right: .3rem;
+				padding-top: .3rem;
+			}
+			
+			.mui-content .shop,
+			.illegalInfo,
+			.userInfo,
+			.handleInfo {
+				border-bottom: 1px solid #F6F6F6;
+			}
+			
+			.mui-content .shop h1,
+			.userInfo h1,
+			.handleInfo h1 {
+				font-size: .36rem;
+				color: #333333;
+			}
+			
+			.mui-content .shop p {
+				padding-bottom: .2rem;
+				height: .3rem;
+			}
+			
+			.mui-content .shop p span:nth-child(2) {
+				color: #ffdb58;
+			}
+			
+			.mui-content .shop p span:nth-child(2).active {
+				color: #0097E0;
+			}
+			
+			.illegalInfo,
+			.userInfo,
+			.handleInfo {
+				padding-top: .2rem;
+			}
+			
+			.illegalInfo p {
+				height: .3rem;
+				line-height: .3rem;
+			}
+			
+			.illegalInfo p span:nth-child(1),
+			.userInfo p span:nth-child(1),
+			.handleInfo p span:nth-child(1) {
+				display: inline-block;
+				width: 2.1rem;
+				font-size: .3rem;
+				color: #2c2c2c;
+			}
+			
+			.illegalInfo p span:nth-child(2),
+			.userInfo p span:nth-child(2),
+			.handleInfo p span:nth-child(2) {
+				display: inline-block;
+				font-size: .3rem;
+				color: #828282;
+			}
+			
+			.payInfo {
+				margin: .5rem .3rem;
+				text-align: center;
+			}
+			
+			.payInfo a {
+				padding: .2rem .4rem;
+			}
+			
+			.payInfo a:nth-child(1) {
+				margin-right: .5rem;
+				background-color: #0097E0;
+			}
+			
+			.payInfo a:nth-child(2) {
+				color: #0097E0;
+			}
+			
+			.mui-icon-phone:before {
+				padding: 0 .2rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<div class="mui-content">
+			<div class="shop mui-clearfix">
+				<h1>广州风日专营店</h1>
+				<p><span class="mui-pull-left">2016年12月30日&nbsp;14:00</span><span class="mui-pull-right">待支付</span></p>
+			</div>
+			<div class="illegalInfo">
+				<p><span>车牌号码：</span><span>粤A234567</span></p>
+				<p><span>违法时间：</span><span>2015-12-13 11：05</span></p>
+				<p><span>决定书好：</span><span>20151215001234565</span></p>
+				<p><span>为发电点：</span><span>广州市天河区科韵路北</span></p>
+				<p><span>违法行为：</span><span>穿红灯</span></p>
+				<p><span>违法记分：</span><span>2分</span></p>
+
+				<p><span>罚款金额：</span><span>200元</span></p>
+
+				<p><span>滞纳金：</span><span>67</span></p>
+				<p><span>手续费：</span><span>22元</span></p>
+
+			</div>
+			<div class="userInfo">
+				<h1>用户信息</h1>
+				<p><span>姓名：</span><span>刘德华</span></p>
+				<p><span>电话号码：</span><span>13802906682</span></p>
+			</div>
+			<div class="handleInfo">
+				<h1>办理信息</h1>
+				<p><span>驾驶人员</span><span>刘德华</span></p>
+				<p><span>驾驶证号</span><span>123456789 </span></p>
+
+				<p><span>办理时间</span><span>2015年12月2日</span></p>
+
+				<p><span>支付方式</span><span>微信</span></p>
+			</div>
+		</div>
+		<div class="payInfo">
+			<a class="mui-btn mui-btn-primary mui-icon mui-icon-camera">立即支付</a>
+			<a class="mui-btn mui-icon mui-icon-phone">联系客服</a>
+		</div>
+
+	</body>
+
+</html>

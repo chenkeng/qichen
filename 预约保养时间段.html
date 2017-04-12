@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/rem.js"></script>
+		<style>
+			.wrap {
+				width: 100%;
+				background-color: #FFFFFF;
+				overflow: hidden;
+			}
+			
+			.time {
+				width: 16rem;
+				padding: .3rem;
+				background-color: #FFFFFF;
+				border-bottom: 1px solid silver;
+			}
+			
+			.time p {
+				margin: 0;
+				display: inline-block;
+				width: 1.5rem;
+				margin-right: .5rem;
+			}
+			
+			.time p span {
+				font-size: .24rem;
+			}
+			
+			.time p span.active {
+				color: #0097E0;
+			}
+			
+			.amount p {
+				display: inline-block;
+				margin: 0;
+			}
+			
+			.choice {
+				background-color: #FFFFFF;
+				height: 1.3rem;
+				padding: 0 .3rem;
+			}
+			
+			.choice>p {
+				margin: 0;
+				/*margin-top: .3rem;*/
+				padding-top: .3rem;
+			}
+			
+			.timeBlock {
+				padding: 0 .3rem 1.4rem;
+			}
+			
+			.timeBlock ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.timeBlock ul li {
+				display: inline-block;
+				background-color: #FFFFFF;
+				width: 2rem;
+				height: 1.5rem;
+				line-height: 1.5rem;
+				margin-top: .3rem;
+				text-align: center;
+				vertical-align: middle;
+			}
+			
+			.timeBlock ul li:nth-child(3n+2) {
+				margin: .3rem .34rem 0;
+			}
+			
+			.mui-btn-block {
+				background-color: #0097E0;
+				color: #FFFFFF;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				margin: 0;
+			}
+			
+			.checkon {
+				background-image: url(images/checkon@2x.png);
+				background-position: right bottom;
+				background-repeat: no-repeat;
+			}
+			.borderColor{
+				border: 1px solid #0097E0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<div class="wrap">
+			<div class="time">
+				<p><span>星期一</span><br /><span>12月20日</span></p>
+				<p><span>星期er</span><br /><span>12月20日</span></p>
+				<p><span>星期一</span><br /><span>12月20日</span></p>
+				<p><span>星期四</span><br /><span>12月23日</span></p>
+				<p><span>星期五</span><br /><span>12月24日</span></p>
+				<p><span>星期一</span><br /><span>12月25日</span></p>
+				<p><span>星期一</span><br /><span>12月26日</span></p>
+			</div>
+		</div>
+		<div class="choice">
+			<p>所选时段的可预约数量如下：</p>
+			<div class="amount">
+				<p class="mui-pull-left"><span>快速保养</span><i>2</i></p>
+				<p class="mui-pull-right"><span>快速保养</span><i>2</i></p>
+			</div>
+
+		</div>
+		<div class="timeBlock">
+			<ul>
+				<li class="checkon borderColor">9:00</li>
+				<li>9:30</li>
+				<li>10:00</li>
+				<li>9:00</li>
+				<li>9:30</li>
+				<li>10:00</li>
+				<li>9:00</li>
+				<li>9:30</li>
+				<li>10:00</li>
+				<li>9:00</li>
+				<li>9:30</li>
+				<li>10:00</li>
+				<li>9:00</li>
+				<li>9:30</li>
+				<li>10:00</li>
+				<li>9:00</li>
+				<li>9:30</li>
+				<li>10:00</li>
+			</ul>
+		</div>
+
+		<button class="mui-btn-block">确定</button>
+	</body>
+
+</html>

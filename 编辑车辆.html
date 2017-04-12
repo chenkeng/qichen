@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>编辑车辆</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/rem.js"></script>
+		<style>
+			.items a {
+				font-size: .28rem;
+				color: #828282;
+			}
+			
+			.items a span {
+				/*margin-left: .3rem;*/
+			}
+			
+			.save {
+				padding: .5rem .3rem;
+			}
+			
+			.btn-primary {
+				background-color: #0097E0;
+				color: #FFFFFF;
+			}
+			
+			.btn-outlined {
+				background-color: #FFFFFF;
+				color: #0097E0;
+			}
+			
+			.items a span:nth-child(1) {
+				display: inline-block;
+				margin-left: 0;
+				width: 2rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<ul class="mui-table-view mui-table-view-chevron">
+			<li class="mui-table-view-cell items">
+				<a href="#notifications" class="mui-navigate-right"><span>车牌号码</span><span>粤AA123456</span></a>
+			</li>
+			<li class="mui-table-view-cell items">
+				<a href="#privacy" class="mui-navigate-right"><span>车辆类型</span> <span>大型车</span></a>
+			</li>
+			<li class="mui-table-view-cell items">
+				<a href="#general"><span>车架号(VIN)</span> <span>888888</span></a>
+			</li>
+			<li class="mui-table-view-cell items">
+				<a href="#general"><span>发动机号</span> <span>888888</span></a>
+			</li>
+		</ul>
+		<div class="save">
+
+			<button class="mui-btn-block btn-primary">保存</button>
+			<button class="mui-btn-block btn-outlined">删除车辆</button>
+		</div>
+	</body>
+
+</html>

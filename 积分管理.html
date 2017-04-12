@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>积分管理</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/rem.js"></script>
+		<style>
+			.totalScore {
+				background-color: #FFFFFF;
+				width: 100%;
+				text-align: center;
+				padding: .6rem .4rem .4rem .4rem;
+			}
+			
+			.totalScore p {
+				font-size: .24rem;
+			}
+			
+			.totalScore h1 {
+				font-size: .48rem;
+				color: #0097E0;
+			}
+			
+			.totalScore span {
+				display: inline-block;
+				width: 1rem;
+				height: 0.3rem;
+				border-radius: 50%;
+				/*border: 1px solid #828282;*/
+				background-color: rgb(246, 246, 246)
+			}
+			
+			.scoreKinds {
+				height: .74rem;
+				padding: 0 .9rem;
+				line-height: .74rem;
+				font-size: .28rem;
+				border-top: 1px solid #EEEEEE;
+				background-color: #FFFFFF;
+			}
+			.scoreKinds p{
+				width: 49%;
+				display: inline-block;
+			}
+			.scoreKinds p:nth-child(1){
+				border-right: 1px solid #EEEEEE;
+			}
+			.scoreDetails {
+				margin-top: .3rem;
+				background-color: #FFFFFF;
+			}
+			.scoreDetails p{
+				height: .78rem;
+				line-height: .8rem;
+				margin-left: .3rem;
+				margin-right: .5rem;
+				border-bottom: 1px solid #EEEEEE;
+			}
+			.scoreDetails p img{
+				/*margin-left: .3rem;*/
+				margin-right: .2rem;
+				width: .24rem;
+				height: .24rem;
+			}
+			.scoreDetails p span:nth-child(2){
+				margin-right: .5rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<div class="totalScore">
+			<p>目前可以用积分</p>
+			<h1>900</h1>
+			<span></span>
+		</div>
+		<div class="scoreKinds">
+			<p> <span class="mui-pull-left">厂家积分<i>400</i></span></p>
+			<p> <span class="mui-pull-right">专营店积分<i>500</i></span></p>
+		</div>
+		<div class="scoreDetails">
+			<p>
+				<img src="images/score@2x.png" alt="" /><span>积分兑换礼品</span><span class="mui-pull-right">-500分</span>
+			</p>
+			<p>
+				<img src="images/score@2x.png" alt="" /><span>积分兑换礼品</span><span class="mui-pull-right">-500分</span>
+			</p>
+			<p>
+				<img src="images/score@2x.png" alt="" /><span>积分兑换礼品</span><span class="mui-pull-right">-500分</span>
+			</p>
+			<p>
+				<img src="images/score@2x.png" alt="" /><span>积分兑换礼品</span><span class="mui-pull-right">-500分</span>
+			</p>
+			<p>
+				<img src="images/score@2x.png" alt="" /><span>积分兑换礼品</span><span class="mui-pull-right">-500分</span>
+			</p>
+			<p>
+				<img src="images/score@2x.png" alt="" /><span>积分兑换礼品</span><span class="mui-pull-right">-500分</span>
+			</p>
+			
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/rem.js"></script>
+		<style>
+			.mui-content {
+				background-color: #FFFFFF;
+			}
+			
+			.avtor {
+				padding-top: .3rem;
+				width: 100%;
+				text-align: center;
+				margin: 0 auto;
+			}
+			
+			.avtor img {
+				width: 2rem;
+				height: 2rem;
+				border-radius: 50%;
+			}
+			
+			.memberInfo {
+				list-style: none;
+				width: 100%;
+				margin-left: -.4rem;
+			}
+			
+			.memberInfo li {
+				line-height: .8rem;
+			}
+			
+			.memberInfo li span:nth-child(1) {
+				width: 2.4rem;
+				display: inline-block;
+			}
+			.memberInfo li span:nth-child(2){color: #828282;}
+			#save {
+				width: 100%;
+				padding: 0 .4rem;
+			}
+			
+			p {
+				text-align: center;
+				margin: .3rem;
+			}
+			
+			#vertifyCode {
+				width: 2.2rem;
+				font-size: .24rem;
+				border: none;
+				border-bottom: 1px solid #828282;
+				border-radius: 0;
+			}
+			
+			.vertifyBtn {
+				margin-left: .1rem;
+				vertical-align: middle
+			}
+			
+			.underLine {
+				border-bottom: 1px solid #828282;
+				width: 4rem;
+				display: inline-block;
+			}
+			
+			.proshop {
+				width: 3rem !important;
+				color: #828282;
+			}
+			
+			#save input {
+				margin-bottom: .3rem;
+			}
+			
+			#save input[type="button"] {
+				height: .8rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<div class="mui-content">
+			<div class="avtor">
+				<img src="images/center-card@3x.png" alt="" />
+			</div>
+			<ul class="memberInfo">
+				<li><span>姓名：</span><span>陈超汉</span></li>
+				<li><span>会员编号：</span><span>V145655656356</span></li>
+				<li><span>车辆VIN：</span><span>DSVS365333</span></li>
+				<li><span>电话号码：</span><span>15217302979</span></li>
+				<li><span>所在专营店：</span><span>广州风日专营店</span></li>
+				<li><span>转入专营店：</span>
+					<a class="underLine"><span class="proshop">请选择转入专营店</span><span class="mui-pull-right">&gt;</span></a>
+				</li>
+				<li><span>验证码：</span><input id="vertifyCode" type="text" placeholder="请输入验证码"><button class="vertifyBtn">获取验证码</button></li>
+			</ul>
+		</div>
+
+		<div id="save">
+			<input type="submit" value="申请转会" class="mui-btn-block">
+			<input type="button" value="申请记录" class="mui-btn mui-btn-block">
+		</div>
+
+		<p>*提示：解绑，请回到微信页面输入“jc”</p>
+	</body>
+
+</html>

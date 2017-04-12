@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人资料</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/rem.js"></script>
+		<style>
+			.mui-input-row {
+				height: 1rem;
+				/*line-height: 1rem;*/
+			}
+			
+			.mui-input-row label {
+				width: 20%;
+			}
+			
+			#vertify {
+				width: 50%;
+				display: inline-block;
+			}
+			
+			.mui-input-row label~input {
+				float: none;
+			}
+			
+			.mui-input-row label {
+				height: 100%;
+			}
+			
+			.mui-input-row input {
+				font-size: .3rem;
+			}
+			
+			.mui-input-row button {
+				/*margin-top: .05rem;*/
+				vertical-align: middle;
+			}
+			
+			button {
+				font-size: .24rem;
+			}
+			
+			.save {
+				margin: .3rem .3rem 0 .3rem;
+			}
+			
+			.openphone {
+				background: url(images/openphone@2x.png) no-repeat center;
+				background-size: .3rem;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.opencode {
+				background: url(images/opencode@2x.png) no-repeat center;
+				background-size: .3rem;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<form class="mui-input-group">
+
+			<div class="mui-input-row">
+				<label><span class="mui-icon openphone"></span></label>
+				<input type="text" placeholder="请输入您的手机号码">
+			</div>
+
+			<div class="mui-input-row">
+				<label><span class="mui-icon opencode"></span></label>
+				<input type="text" id="vertify" placeholder="验证码">
+				<button type="button">获取验证码</button>
+			</div>
+
+		</form>
+
+		<div class="save">
+			<input type="submit" name="" id="" value="保存" />
+		</div>
+	</body>
+
+</html>
